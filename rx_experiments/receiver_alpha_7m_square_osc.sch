@@ -1,11 +1,11 @@
 <Qucs Schematic 0.0.19>
 <Properties>
-  <View=-171,20,2292,1403,0.683016,0,341>
+  <View=-210,20,2583,1417,0.683016,0,351>
   <Grid=10,10,1>
-  <DataSet=receiver_alpha_7m.dat>
-  <DataDisplay=receiver_alpha_7m.sch>
+  <DataSet=receiver_alpha_7m_square_osc.dat>
+  <DataDisplay=receiver_alpha_7m_square_osc.sch>
   <OpenDisplay=1>
-  <Script=receiver_alpha_7m.m>
+  <Script=receiver_alpha_7m_square_osc.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Title>
@@ -17,7 +17,6 @@
 </Symbol>
 <Components>
   <R R3 1 1120 300 -26 15 1 2 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <Vac LO1 1 1200 300 -26 18 1 2 "3 V" 1 "1 MHz" 1 "0" 0 "0" 0>
   <R R4 1 1250 450 -26 15 1 2 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <Eqn fft_lo1 1 850 850 -30 16 0 0 "y2=fft(LO.Vt)" 1 "yes" 0>
   <Eqn fft_rf1 1 850 720 -30 16 0 0 "y1=fft(RF.Vt)" 1 "yes" 0>
@@ -39,11 +38,10 @@
   <GND * 1 1250 300 0 0 0 0>
   <GND * 1 1310 760 0 0 0 0>
   <Eqn fft_output2 1 850 980 -30 16 0 0 "y3=fft(Output.Vt-1e-05)" 1 "yes" 0>
-  <.TR TR1 1 480 590 0 69 0 0 "lin" 1 "0" 1 "20 us" 1 "10000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <Vrect V6 1 1200 300 -26 -94 0 2 "1 V" 1 "500 ns" 1 "500 ns" 1 "1 ns" 0 "1 ns" 0 "0 ns" 0>
+  <.TR TR1 1 460 570 0 69 0 0 "lin" 1 "0" 1 "20 us" 1 "10000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>
 <Wires>
-  <1230 300 1250 300 "" 0 0 0 "">
-  <1150 300 1170 300 "LO" 1130 270 0 "">
   <1280 450 1300 450 "" 0 0 0 "">
   <1200 450 1220 450 "" 0 0 0 "">
   <1300 450 1300 590 "" 0 0 0 "">
@@ -87,6 +85,8 @@
   <1200 420 1360 420 "" 0 0 0 "">
   <1360 420 1360 700 "" 0 0 0 "">
   <1310 760 1430 760 "" 0 0 0 "">
+  <1230 300 1250 300 "" 0 0 0 "">
+  <1150 300 1170 300 "LO" 1130 270 0 "">
   <2240 320 2240 320 "Output" 2210 280 0 "">
 </Wires>
 <Diagrams>
