@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.19>
 <Properties>
-  <View=-210,20,2583,1417,0.683016,0,351>
+  <View=-210,20,2583,1417,0.683016,620,84>
   <Grid=10,10,1>
   <DataSet=receiver_alpha_7m_square_osc.dat>
   <DataDisplay=receiver_alpha_7m_square_osc.sch>
@@ -38,8 +38,8 @@
   <GND * 1 1250 300 0 0 0 0>
   <GND * 1 1310 760 0 0 0 0>
   <Eqn fft_output2 1 850 980 -30 16 0 0 "y3=fft(Output.Vt-1e-05)" 1 "yes" 0>
-  <Vrect V6 1 1200 300 -26 -94 0 2 "1 V" 1 "500 ns" 1 "500 ns" 1 "1 ns" 0 "1 ns" 0 "0 ns" 0>
   <.TR TR1 1 460 570 0 69 0 0 "lin" 1 "0" 1 "20 us" 1 "10000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <Vrect V6 1 1200 300 -26 -94 0 2 "3 V" 1 "500 ns" 1 "500 ns" 1 "1 ns" 0 "1 ns" 0 "0 ns" 0>
 </Components>
 <Wires>
   <1280 450 1300 450 "" 0 0 0 "">
