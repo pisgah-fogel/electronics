@@ -1,9 +1,9 @@
-<Qucs Schematic 0.0.20>
+<Qucs Schematic 0.0.19>
 <Properties>
-  <View=0,-120,1102,943,1,0,0>
+  <View=0,-120,1367,943,1,0,0>
   <Grid=10,10,1>
   <DataSet=colpitts.dat>
-  <DataDisplay=colpitts.dpl>
+  <DataDisplay=colpitts.sch>
   <OpenDisplay=1>
   <Script=colpitts.m>
   <RunScript=0>
@@ -29,11 +29,11 @@
   <GND *1 5 650 320 0 0 0 0>
   <GND *2 5 810 290 0 0 0 0>
   <Vrect V2 1 650 290 18 -26 0 1 "1 V" 1 "4 us" 1 "4 us" 1 "1 ns" 0 "1 ns" 0 "0 ns" 0>
-  <.TR TR1 1 140 290 0 65 0 0 "lin" 1 "0 us" 1 "16 us" 1 "1000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
   <L L1 1 270 200 10 -26 0 1 "100 uH" 1 "" 0>
   <C C1 1 360 170 17 -26 0 1 "10 pF" 1 "" 0 "neutral" 0>
   <C C2 1 360 230 17 -26 0 1 "10 pF" 1 "" 0 "neutral" 0>
   <R R4 1 690 170 -26 15 0 0 "50 Ohm" 1 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <.TR TR1 1 580 -50 0 79 0 0 "lin" 1 "0 us" 1 "16 us" 1 "1000" 0 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
 </Components>
 <Wires>
   <460 150 460 170 "" 0 0 0 "">
@@ -57,6 +57,9 @@
   <360 260 460 260 "" 0 0 0 "">
 </Wires>
 <Diagrams>
+  <Rect 90 727 1185 347 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Output.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
 </Diagrams>
 <Paintings>
   <Text 300 310 16 #000000 0 "Colpitts oscillator">

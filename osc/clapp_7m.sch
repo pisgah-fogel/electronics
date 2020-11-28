@@ -1,10 +1,10 @@
-<Qucs Schematic 0.0.20>
+<Qucs Schematic 0.0.19>
 <Properties>
-  <View=0,-106,1342,603,0.751315,0,0>
+  <View=0,-106,1533,1135,0.751315,0,0>
   <Grid=10,10,1>
   <DataSet=clapp_7m.dat>
-  <DataDisplay=clapp_7m.dpl>
-  <OpenDisplay=1>
+  <DataDisplay=clapp_7m.sch>
+  <OpenDisplay=0>
   <Script=clapp_7m.m>
   <RunScript=0>
   <showFrame=0>
@@ -76,6 +76,9 @@
   <1090 280 1090 340 "" 0 0 0 "">
 </Wires>
 <Diagrams>
+  <Rect 200 1029 1286 439 3 #c0c0c0 1 00 1 0 0.2 1 1 -0.1 0.5 1.1 1 -0.1 0.5 1.1 315 0 225 "" "" "">
+	<"Pr1.Vt" #0000ff 0 3 0 0 0>
+  </Rect>
 </Diagrams>
 <Paintings>
 </Paintings>
